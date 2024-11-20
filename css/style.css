@@ -1,0 +1,618 @@
+@import url("reset.css");
+
+/* lato-300 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/lato-v24-latin-300.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lato-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/lato-v24-latin-700.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lato-900 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/lato-v24-latin-900.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Lato';
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+/* header start */
+
+.wrapper {
+  max-width: 1062px;
+  margin: 0 auto;
+}
+
+
+
+.header__link:focus,
+.header__link:hover,
+.header__link:active {
+  opacity: .56;
+}
+
+
+
+
+
+.header__wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: 25px;
+}
+
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.header__item {
+  margin-right: 82px;
+}
+
+
+.header__item:last-child {
+  margin-right: 0px;
+}
+
+
+
+.header__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+
+.header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+
+.header__burger {
+  width: 40px;
+  height: 28px;
+  position: relative;
+  display: none;
+}
+
+.header__line {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  left: 0px;
+}
+
+.header__line__first {
+  top: 0px;
+}
+
+.header__line__second {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header__line__third {
+  bottom: 0px;
+}
+
+
+
+
+/* header end */
+
+
+/* intro start */
+
+
+.intro {
+  min-height: 100vh;
+  background: url(../img/bg_intro.jpg) no-repeat center;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  padding-top: 263px;
+  padding-bottom: 223px;
+}
+
+.intro__title {
+  font-size: 50px;
+  max-width: 619px;
+  height: 121px;
+  line-height: 60px;
+  font-weight: 500;
+  margin-bottom: 22px;
+}
+
+.intro__subtitle {
+  max-width: 546px;
+  height: 72px;
+  margin-bottom: 59px;
+}
+
+
+.search-form__info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.search-form__field {
+  width: 297px;
+  border: 0;
+  background: transparent;
+  background: url(../img/svg/circle_icon.svg) no-repeat top 6px left;
+  border-bottom: 2px solid #BFC0C5;
+  margin-right: 61px;
+  color: #fff;
+  padding-left: 43px;
+  padding-bottom: 22px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.search-form__submit {
+  text-transform: uppercase;
+  background: #187dff;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  border: 0px;
+  padding: 15px 39px;
+
+}
+
+.search-form__submit:hover,
+.search-form__submit:focus,
+.search-form__submit:active {
+  background: #7099d0;
+}
+
+.search-form__field::placeholder {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.benefits__wrapper {
+  max-width: 1262px;
+  background-color: #ffffff;
+  height: 655px;
+  margin: 0 auto;
+  box-shadow: 0px 2px 20px 0px rgba(21, 24, 36, 0.16);
+  position: relative;
+}
+
+.benefits__title {
+  width: 100%;
+  font-size: 35px;
+  line-height: 42px;
+  top: 0;
+  left: 0;
+  padding: 93px 100px 100px 99px;
+  background-color: #fff;
+  transform: translateY(-40%);
+  color: #061933;
+}
+
+.benefits__cards {
+  color: #061933;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 55px;
+  padding: 0px 100px;
+}
+
+.benefits {
+  margin-bottom: 131px;
+}
+
+.benefits__card {
+  grid-column: span 1;
+
+}
+
+.benefits__card-picture {
+  max-width: 68px;
+  margin-bottom: 37px;
+}
+
+.benefits__card-title {
+  margin-bottom: 26px;
+}
+
+.benefits__card-text {
+  margin-bottom: 39px;
+}
+
+.benefits__card-link {
+  display: inline;
+  padding-right: 59px;
+  width: 102px;
+  height: 24px;
+  text-decoration: none;
+  color: #006DFE;
+  background: url(../img/svg/arrow.svg) no-repeat 95% center;
+  transition: .2s all;
+}
+
+.benefits__card-link:hover,
+.benefits__card-link:active,
+.benefits__card-link:focus {
+  background: url(../img/svg/arrow.svg) no-repeat right center;
+}
+
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .benefits__cards {
+    grid-template-columns: repeat(2, 1fr);
+    /* Reduce columns to 2 */
+    gap: 30px;
+  }
+
+  .benefits__card-picture {
+    text-align: center;
+    /* Center the image container */
+  }
+
+  .benefits-pic {
+    display: block;
+    margin: 0 auto;
+    /* Center the image itself */
+  }
+
+  .benefits__title {
+    font-size: 28px;
+    /* Adjust font size */
+    line-height: 36px;
+    padding: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .benefits__cards {
+    grid-template-columns: 1fr;
+    /* Single column */
+    gap: 20px;
+
+  }
+
+  .benefits__card-picture {
+    text-align: center;
+    /* Center the image container */
+  }
+
+  .benefits-pic {
+    display: block;
+    margin: 0 auto;
+    /* Center the image itself */
+  }
+
+  .benefits__title {
+    font-size: 24px;
+    /* Smaller font for smaller screens */
+    line-height: 32px;
+  }
+
+  .benefits__card {
+    margin-bottom: 20px;
+  }
+
+  .benefits__card-link {
+    font-size: 12px;
+    /* Smaller font for links */
+  }
+}
+
+
+/* 
+
+.benefits-pic {
+  max-width: 66px;
+  margin-bottom: 37px;
+}
+
+/* Places start */
+.places {
+  margin-bottom: 131px;
+}
+
+.wrapper__full {
+  max-width: 1262px;
+  margin: 0 auto;
+}
+
+.places__title {
+  font-size: 35px;
+  line-height: 42px;
+  width: 457px;
+  height: 42px;
+  color: #102746;
+  margin-bottom: 36px;
+  position: relative;
+}
+
+.section-title {
+  margin-right: 15px;
+}
+
+.places__title::after {
+  display: block;
+  content: '';
+  width: 253px;
+  height: 3px;
+  background-color: #006DFE;
+  position: absolute;
+  margin-top: 7px;
+}
+
+.places__caption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.places__view_all-link {
+  padding-right: 59px;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #006DFE;
+  text-transform: uppercase;
+  background: url(../img/svg/arrow.svg) no-repeat right center;
+}
+
+.places__view_all-link:hover,
+.places__view_all-link:active,
+.places__view_all-link:focus {
+  opacity: .65;
+}
+
+.places__cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.places__card {
+  position: relative;
+}
+
+.places__card:hover,
+.places__card:active {
+  transform: scale(1.05);
+}
+
+.places__card::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.places__card__title {
+  font-size: 50px;
+  line-height: 60px;
+  color: white;
+  bottom: 27px;
+  left: 29px;
+  z-index: 3;
+  position: absolute;
+}
+
+.places__card-pic {
+  width: 100%;
+  transition: .15s all;
+}
+
+.places__card_link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+
+/* .places__figure_card {
+  grid-column: span 3;
+} */
+
+.places__figure_card_lg {
+  grid-column: span 3;
+}
+
+.places__figure_card_sm {
+  grid-column: span 2;
+}
+
+.places__figure_size__card__lg {
+  height: 354px;
+  object-fit: cover;
+}
+
+
+.places__figure_size__card__sm {
+  height: 283px;
+  object-fit: cover;
+}
+
+
+/* Tours styles start */
+
+.tours {
+  margin-bottom: 139px;
+}
+
+.tours__tour {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 108px;
+  align-items: center;
+  margin-bottom: 77px;
+}
+
+.tour__info {
+  padding-left: 47px;
+}
+
+.tour__title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 85px;
+  color: #102746;
+}
+
+.tour__desc {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 58px;
+  color: #102746;
+}
+
+.tour__more {
+  font-size: 16px;
+  color: #006DFE;
+  text-decoration: none;
+  padding-right: 59px;
+  background: url(../img/svg/arrow.svg) no-repeat right center;
+}
+
+.tour__more:hover,
+.tour__more:focus {
+  opacity: .65;
+}
+
+@media screen and (max-width:768px) {
+  .header__burger {
+    display: block;
+  }
+
+  .header__nav {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 11;
+    background: #000;
+    transform: translateX(100%);
+    padding: 75px;
+  }
+
+  .header__item {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  .header__nav-close {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    z-index: 11px;
+    top: 20px;
+    right: 20px;
+  }
+
+  .header__nav-close-line:first-child {
+    transform: translateY(-50%) rotate(45deg);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .header__burger {
+    display: block;
+  }
+
+  .search-form__field {
+    margin-bottom: 25px;
+  }
+
+  .benefits__cards {
+    padding: 0 15px;
+    gap: 35px;
+  }
+
+  .benefits__title {
+    padding: 45px 15px;
+  }
+
+  .benefits__wrapper {
+    box-shadow: none;
+  }
+
+  .places__figure_card_lg {
+    grid-column: span 6;
+  }
+
+  .places__figure_card_sm {
+    grid-column: span 6;
+  }
+}
