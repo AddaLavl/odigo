@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,8 @@
     <!-- <link rel="stylesheet" href="./css/reset.css"> -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
 
+<body>
     <header class="header">
         <div class="wrapper">
             <div class="header__wrapper">
@@ -17,7 +18,12 @@
                         <img src="./img/svg/odigo-logo.svg" alt="Discover Amazing places in Japan">
                     </a>
                 </div>
-                <nav class="header__nav">
+                <div class="header__burger burger" id="burger-menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <nav class="header__nav" id="nav-menu">
                     <ul class="header__list">
                         <li class="header__item">
                             <a href="./article.html" class="header__link">Article</a>
@@ -33,24 +39,19 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="header__nav-close">
-                    <span class="header__nav-close-line"></span>
-                    <span class="header__nav-close-line"></span>
-                </div>
-                <div class="header__burger burger">
-                    <span class="header__line header__line__first"></span>
-                    <span class="header__line header__line__second"></span>
-                    <span class="header__line header__line__third"></span>
-                </div>
+            </div>
         </div>
     </header>
+
 
     <main class="main">
         <section class="intro">
             <div class="wrapper">
                 <h1 class="intro__title">Discover Amazing places in Japan</h1>
                 <p class="intro__subtitle">
-                    Jump off balcony, onto stranger's head. Chase ball of string hide when guests  come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door. 
+                    Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being
+                    gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack
+                    the child, open the door.
                 </p>
                 <form class="search-form">
                     <fieldset class="search-form__wrap">
@@ -58,7 +59,7 @@
                             <input type="text" class="search-form__field" placeholder="What would you like to do?">
                             <input type="text" class="search-form__field" placeholder="Where would you like to go?">
                             <button class="search-form__submit">Search</button>
-                        </p> 
+                        </p>
                     </fieldset>
                 </form>
             </div>
@@ -72,29 +73,35 @@
                 <div class="benefits__cards">
                     <div class="benefits__card">
                         <div class="benefits__card-picture">
-                            <img class="benefits-pic" src="./img/svg/japanese_house.svg" alt="Welcome to Odigo!" class="benefits__card-thumb">
+                            <img class="benefits-pic" src="./img/svg/japanese_house.svg" alt="Welcome to Odigo!"
+                                class="benefits__card-thumb">
                         </div>
-            
+
                         <h3 class="benefits__card-title">Welcome to Odigo!</h3>
-                        <p class="benefits__card-text">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.</p>
+                        <p class="benefits__card-text">Jump off balcony, onto stranger's head. Chase ball of string hide
+                            when guests come over.</p>
                         <a href="#!" class="benefits__card-link">LEARN MORE</a>
                     </div>
                     <div class="benefits__card">
                         <div class="benefits__card-picture">
-                            <img class="benefits-pic" src="./img/svg/person_icon.svg" alt="Your Personal Japan Guide" class="benefits__card-thumb">
+                            <img class="benefits-pic" src="./img/svg/person_icon.svg" alt="Your Personal Japan Guide"
+                                class="benefits__card-thumb">
                         </div>
-            
+
                         <h3 class="benefits__card-title">Your Personal Japan Guide</h3>
-                        <p class="benefits__card-text">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.</p>
+                        <p class="benefits__card-text">Jump off balcony, onto stranger's head. Chase ball of string hide
+                            when guests come over.</p>
                         <a href="#!" class="benefits__card-link">LEARN MORE</a>
                     </div>
                     <div class="benefits__card">
                         <div class="benefits__card-picture">
-                            <img class="benefits-pic" src="./img/svg/shop-icon.svg" alt="Promoting local businesses" class="benefits__card-thumb">
+                            <img class="benefits-pic" src="./img/svg/shop-icon.svg" alt="Promoting local businesses"
+                                class="benefits__card-thumb">
                         </div>
-            
+
                         <h3 class="benefits__card-title">Promoting Local Businesses</h3>
-                        <p class="benefits__card-text">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.</p>
+                        <p class="benefits__card-text">Jump off balcony, onto stranger's head. Chase ball of string hide
+                            when guests come over.</p>
                         <a href="#!" class="benefits__card-link">LEARN MORE</a>
                     </div>
                 </div>
@@ -113,31 +120,36 @@
 
                 <div class="places__cards">
                     <figure class="places__card places__figure_card_lg">
-                        <img src="./img/jpg/place-1.jpg" alt="Mount Fuji" class="places__card-pic places__figure_size__card__lg">
+                        <img src="./img/jpg/place-1.jpg" alt="Mount Fuji"
+                            class="places__card-pic places__figure_size__card__lg">
                         <figcaption class="places__card__title">Mount Fuji</figcaption>
                         <a href="#!" class="places__card_link"></a>
                     </figure>
                     <figure class="places__card places__figure_card_lg">
-                        <img src="./img/jpg/place-2.jpg" alt="Kyoto" class="places__card-pic places__figure_size__card__lg">
+                        <img src="./img/jpg/place-2.jpg" alt="Kyoto"
+                            class="places__card-pic places__figure_size__card__lg">
                         <figcaption class="places__card__title">Kyoto</figcaption>
                         <a href="#!" class="places__card_link"></a>
                     </figure>
                     <figure class="places__card places__figure_card_sm">
-                        <img src="./img/jpg/place-2.jpg" alt="Kyoto" class="places__card-pic places__figure_size__card__sm">
+                        <img src="./img/jpg/place-2.jpg" alt="Kyoto"
+                            class="places__card-pic places__figure_size__card__sm">
                         <figcaption class="places__card__title">Kyoto</figcaption>
                         <a href="#!" class="places__card_link"></a>
                     </figure>
                     <figure class="places__card places__figure_card_sm">
-                        <img src="./img/jpg/place-2.jpg" alt="Kyoto" class="places__card-pic places__figure_size__card__sm">
+                        <img src="./img/jpg/place-2.jpg" alt="Kyoto"
+                            class="places__card-pic places__figure_size__card__sm">
                         <figcaption class="places__card__title">Kyoto</figcaption>
                         <a href="#!" class="places__card_link"></a>
                     </figure>
                     <figure class="places__card places__figure_card_sm">
-                        <img src="./img/jpg/place-2.jpg" alt="Kyoto" class="places__card-pic places__figure_size__card__sm">
+                        <img src="./img/jpg/place-2.jpg" alt="Kyoto"
+                            class="places__card-pic places__figure_size__card__sm">
                         <figcaption class="places__card__title">Kyoto</figcaption>
                         <a href="#!" class="places__card_link"></a>
                     </figure>
-                    
+
                 </div>
             </div>
         </section>
@@ -155,7 +167,9 @@
                             Prefecture in Focus: Tottori
                         </h3>
                         <p class="tour__desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, 
+                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                            Being gorgeous with belly side up i could pee on this if i had the energy but under the bed,
+                            for attack the child, open the door,
                         </p>
                         <a href="#!" class="tour__more">VIEW PREFECTURE</a>
                     </div>
@@ -167,12 +181,15 @@
                             Featured Neighborhood: Kyoto’s Arashiyama
                         </h3>
                         <p class="tour__desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, 
+                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                            Being gorgeous with belly side up i could pee on this if i had the energy but under the bed,
+                            for attack the child, open the door,
                         </p>
                         <a href="#!" class="tour__more">VIEW PREFECTURE</a>
                     </div>
                     <div class="tour__pic">
-                        <img src="./img/jpg/place-1.jpg" alt="Featured Neighborhood: Kyoto’s Arashiyama" class="tour__thumb">
+                        <img src="./img/jpg/place-1.jpg" alt="Featured Neighborhood: Kyoto’s Arashiyama"
+                            class="tour__thumb">
                     </div>
                 </div>
 
@@ -181,5 +198,36 @@
 
 
     </main>
+
+    <script>
+
+        const burgerMenu = document.getElementById('burger-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        // Toggle menu visibility and burger animation
+        burgerMenu.addEventListener('click', () => {
+            burgerMenu.classList.toggle('open');
+            navMenu.classList.toggle('open');
+        });
+
+        let open = true
+
+        // Close the menu when a link is clicked (optional)
+        const navLinks = document.querySelectorAll('.header__link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (open) {
+
+                    burgerMenu.classList.remove('open');
+                    navMenu.classList.remove('open');
+                } else {
+
+                }
+
+            });
+        });
+
+    </script>
 </body>
+
 </html>
